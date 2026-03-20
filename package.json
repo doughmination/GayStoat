@@ -1,0 +1,34 @@
+{
+    "name": "gaybot-stoat",
+    "version": "1.0.0",
+    "type": "commonjs",
+    "main": "dist/main.js",
+    "description": "GayStoat — A fun Stoat bot by Clove Twilight",
+    "homepage": "https://github.com/Doughmination/GayStoat#readme",
+    "bugs": {
+        "url": "https://github.com/Doughmination/GayStoat/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Doughmination/GayStoat.git"
+    },
+    "license": "SEE LICENCE IN LICENCE",
+    "author": "Clove Twilight",
+    "scripts": {
+        "test": "npm run build && node dist/main.js",
+        "build": "tsc",
+        "start": "node dist/main.js",
+        "dev": "nodemon --watch src --ext ts --exec \"npm run build && npm run start\""
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@dotenvx/dotenvx": "^1.51.4",
+        "chalk": "^4.1.2",
+        "node-fetch": "^2.7.0",
+        "nodemon": "^3.1.11",
+        "revolt.js": "^7.0.0"
+    }
+}
