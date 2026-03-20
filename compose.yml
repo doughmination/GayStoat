@@ -1,0 +1,9 @@
+services:
+  gaystoat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gaystoat
+    volumes:
+      - ./.env:/app/.env:ro
+      - ./.env.keys:/app/.env.keys:ro
